@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercicio04</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen'>
+    
+
+    <style>
+        body {
+            background-color: burlywood;
+            color: brown;
+            font: 20pt;
+            font-style: oblique;
+            font-size: larger;
+        }
+        .titulo {
+            text-align: center;
+            color:brown
+        }
+        p {
+            text-align: center;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1 class="titulo">Olá Mundo</h1>
+    </div>
+    <div class="div2">
+        <p class="subtitulo">Já me livrei da maldiçao</p>
+    </div>
+    
+    <script>
+        var nome = window.prompt('Qual é seu nome: ')
+        document.writeln(`Olá <strong>${nome}</strong> Seu nome tem ${nome.length} letras!!<br/>`)
+        document.writeln(`Seu nome em maiusculo é ${nome.toUpperCase()}<br/>`)
+        document.writeln(`Seu nome em minusculo é ${nome.toLowerCase()}<br/>`)
+        
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex012</title>
+</head>
+<body>
+    <h1>Digite sua Nacionalidade</h1>
+    Digite o seu país: <input type="text" name="nactxt" id="nactxt">
+    <input type="button" value="Verificar" onclick="pais()">
+    <div id="res"></div> 
+
+    <script>
+        function pais() {
+            var nacio = document.querySelector('input#nactxt')
+            var name = String(nacio.value)
+            var res = document.getElementById('res')
+
+            if (name == 'Brasil') {
+                res.innerHTML = `<p>Vivendo em <strong>${name}</strong><br>Você é <strong>Brasileiro(a)</strong></p>`
+                
+            
+            } else if(name == 'EUA' || name == 'Estados Unidos') {
+                res.innerHTML = `<p>Vivendo em <strong>${name}</strong><br>Você é <strong>Americano(a)</strong></p>`
+                
+            }
+        }
+        
+    </script>
+</body>
+</html>
